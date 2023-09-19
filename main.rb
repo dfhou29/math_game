@@ -4,4 +4,6 @@ require './game'
 require './score'
 
 game = Game.new
-game.start_round
+while game.end? == false
+  game.start_round
+end
